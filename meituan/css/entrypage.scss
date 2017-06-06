@@ -1,0 +1,250 @@
+@import 'public.css';
+@import 'entrypagemixin.scss';
+.header {
+    height: 44px;
+    background: #06c1ae;
+    line-height: 44px;
+    color: #FFF;
+    font-size: 1.6rem;
+    @include br;
+    .back {
+        width: 4%;
+        margin-left: 4%;
+        float: left;
+        color: #FFF;
+    }
+    .header-entry {
+        width: 78%;
+        float: left;
+        text-align: center;
+    }
+    .register {
+        float: right;
+        width: 10%;
+        margin-right: 4%;
+        color: #FFF;
+    }
+}
+
+.login {
+    height: 45px;
+    background: #FFF;
+    font-size: 1.4rem;
+    @include br;
+    .entry {
+        width: 50%;
+        float: left;
+        text-align: center;
+        line-height: 43px;
+        color: #777777;
+    }
+    .h {
+        color: #8ae2d9;
+        border-bottom: 2px solid #06c1ae;
+    }
+}
+
+.content {
+    line-height: 43px;
+    font-size: 1.5rem;
+    text-align: center;
+    display: none;
+    .user {
+        height: 43px;
+        @include br;
+    }
+    .password {
+        height: 43px;
+        @include br;
+    }
+    .pwd,
+    .name,
+    .verification {
+        float: left;
+        margin-left: 4%;
+        font-weight: bold;
+    }
+    .open {
+        display: none;
+    }
+    input {
+        float: left;
+        width: 60%;
+        height: 18px;
+        border: none;
+        background: none;
+        margin-left: 6%;
+        margin-top: 12px;
+    }
+    .moblie {
+        width: 120px;
+    }
+    .eye {
+        float: right;
+        margin-right: 4%;
+    }
+    .eye-open {
+        display: none;
+    }
+    .error {
+        float: right;
+        margin-right: 4%;
+        color: #777777;
+        display: none;
+    }
+    button {
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+    }
+    .entry-button {
+        width: 90%;
+        height: 45px;
+        margin: 20px auto;
+        background: #83e1d7;
+        color: #FFF;
+    }
+    a {
+        color: #999999;
+    }
+    .otherway {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        margin-left: -45%;
+        width: 90%;
+        height: auto;
+        .line {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            border-top: 1px solid #efefef;
+            z-index: 0;
+        }
+        .c {
+            position: absolute;
+            left: 50%;
+            top: -18px;
+            width: 36px;
+            height: 36px;
+            margin: 0 0 0 -18px;
+            background: #FFF;
+            border-top: 1px solid #f4f4f4;
+            border-bottom: 1px solid #efefef;
+            @include br2;
+            color: #efefef;
+            @include br1(50%);
+            z-index: 10;
+        }
+        .up {
+            display: block;
+        }
+        .otherfont {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #ababab;
+        }
+        .threeway {
+            width: 55%;
+            height: 70px;
+            margin: 0 auto 40px auto;
+            .weixin {
+                float: left;
+                color: #51c332;
+            }
+            span {
+                color: #878787;
+            }
+            .pic {
+                width: 45px;
+                height: 45px;
+                border: 1px solid #efefef;
+                @include br1(50%);
+                font-size: 3rem;
+                line-height: 45px;
+                text-align: center;
+            }
+            .xinlang {
+                position: absolute;
+                left: 50%;
+                margin-left: -22px;
+                color: #f44c24;
+            }
+            .qq {
+                float: right;
+                color: #23b9e4;
+            }
+        }
+    }
+    .mobile {
+        height: 43px;
+        @include br;
+        .getcode {
+            float: right;
+            margin-top: 7px;
+            margin-right: 4%;
+            height: 30px;
+            font-size: 1.2rem;
+            background: #f7f7f7;
+            color: #bcbcbc;
+        }
+    }
+    .code {
+        height: 43px;
+        @include br;
+    }
+    .deal {
+        width: 90%;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 auto;
+        font-size: 1rem;
+        .left {
+            float: left;
+            span {
+                color: #999999;
+            }
+            a {
+                color: #3ecfc0;
+                text-decoration: underline;
+            }
+        }
+        .right {
+            float: right;
+        }
+    }
+}
+
+.ch {
+    display: block;
+}
+
+.shade {
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    margin-left: -25%;
+    width: 50%;
+    height: 200px;
+    background: #ccc;
+    display: none;
+    .shade-closed {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: #FFF;
+    }
+    .shade-font {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 1.5rem;
+    }
+}

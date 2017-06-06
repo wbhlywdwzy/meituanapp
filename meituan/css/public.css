@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height:100%;
+    font-size: 62.5%;
+    background: #f0efed;
+    font-family: 'Microsoft Yahei';
+}
+a, a:hover, a:visited{
+    text-decoration: none;
+    color: #000;
+}
+ol, ul, li{
+    list-style-type: none;
+}
+input{
+    outline: none;
+}
+.icon{
+    font-family: 'iconfont';
+}

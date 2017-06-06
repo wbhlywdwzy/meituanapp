@@ -1,0 +1,24 @@
+@mixin br {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+@mixin br1($val) {
+    -webkit-border-radius: $val;
+    -moz-border-radius: $val;
+    -ms-border-radius: $val;
+    -o-border-radius: $val;
+    border-radius: $val;
+}
+
+@mixin br2 {
+    box-shadow: 1px 1px 1px 1px #f1f1f1;
+    -webkit-box-shadow: 1px 1px 1px 1px #f1f1f1;
+    -moz-box-shadow: 1px 1px 1px 1px #f1f1f1;
+    -ms-box-shadow: 1px 1px 1px 1px #f1f1f1;
+    -o-box-shadow: 1px 1px 1px 1px #f1f1f1;
+}
+@mixin br3{
+   width: 100%;
+   height: auto;
+}
