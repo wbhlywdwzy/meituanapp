@@ -10,6 +10,30 @@
     -o-border-radius: $val;
     border-radius: $val;
 }
+@mixin br4($val) {
+    -webkit-border-top-left-radius: $val;
+    -moz-border-top-left-radius: $val;
+    -ms-border-top-left-radius: $val;
+    -o-border-top-left-radius: $val;
+    border-top-left-radius: $val;
+    -webkit-border-top-right-radius: $val;
+    -moz-border-top-right-radius: $val;
+    -ms-border-top-right-radius: $val;
+    -o-border-top-right-radius: $val;
+    border-top-right-radius: $val;
+}
+@mixin br5($val) {
+    -webkit-border-bottom-left-radius: $val;
+    -moz-border-bottom-left-radius: $val;
+    -ms-border-bottom-left-radius: $val;
+    -o-border-bottom-left-radius: $val;
+    border-bottom-left-radius: $val;
+    -webkit-border-bottom-right-radius: $val;
+    -moz-border-bottom-right-radius: $val;
+    -ms-border-bottom-right-radius: $val;
+    -o-border-bottom-right-radius: $val;
+    border-bottom-right-radius: $val;
+}
 
 @mixin br2 {
     box-shadow: 1px 1px 1px 1px #f1f1f1;

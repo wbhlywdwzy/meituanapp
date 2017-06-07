@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1496631310422'); /* IE9*/
-  src: url('iconfont.eot?t=1496631310422#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1496631310422') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1496631310422') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1496631310422#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1496822128576'); /* IE9*/
+  src: url('iconfont.eot?t=1496822128576#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1496822128576') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1496822128576') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1496822128576#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -28,6 +28,8 @@
 .icon-zhoubian:before { content: "\e6e3"; }
 
 .icon-liren:before { content: "\e606"; }
+
+.icon-wodedingdan:before { content: "\e652"; }
 
 .icon-dianhua:before { content: "\e681"; }
 

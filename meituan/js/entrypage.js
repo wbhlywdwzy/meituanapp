@@ -33,23 +33,27 @@ $(function() {
     var nums = null;
     var vnums = '';
     var pwd = '';
-    $(".pwd-button").on("click", function() {
+    $(".content-show input").on("input", function() {
         vnums = '';
         nums = $(".phone").val();
         pwd = $(".hidepwd").val()
         if (nums == '' || !zz.test(nums) || pwd == '') {
-            alert("账号或密码有误")
+            $(".pwd-button").attr("disabled", 'true');
+             $(".pwd-button").css({"background":"#83e1d7"});
         } else {
-            alert("成功")
+            $(".pwd-button").removeAttr("disabled", 'true');
+             $(".pwd-button").css({"background":"#06c1ae"});
         }
     });
     $(".moblie").on("input", function() {
             vnums = '';
             nums = $(".moblie").val();
             if (nums == '' || !zz.test(nums)) {
-                $(".getcode").attr("disabled", 'true')
+                $(".getcode").attr("disabled", 'true');
+                $(".getcode").css({"background":"#83e1d7"});
             } else {
-                $(".getcode").removeAttr("disabled", 'true')
+                $(".getcode").removeAttr("disabled", 'true');
+                $(".getcode").css({"background":"#06c1ae"});
             }
         })
         //手机号
@@ -100,16 +104,28 @@ $(function() {
     $(".shade-closed").on("click", function() {
         $(".shade").hide();
     });
-    $(".entry-code").on("click", function() {
+    $(".content-hide input").on("input", function() {
       var  val1=$(".showpwd").val();
       var  val2=$(".yard-val").text();
       var val=$(".moblie").val();
-        if(val1!==val2||val==''||val1==""||!zz.test(val)){
-            alert("失败")
+        if(val==''||val1==""||!zz.test(val)){
+            $(".entry-code").attr("disabled", 'true');
+            $(".entry-code").css({"background":"#83e1d7"});
         }else{
-            alert("成功")
+           $(".entry-code").removeAttr("disabled", 'true');
+             $(".entry-code").css({"background":"#06c1ae"});
         }
     });
+    $(".entry-code").on("click",function(){
+         var  val1=$(".showpwd").val();
+      var  val2=$(".yard-val").text();
+        if(val1!==val2){
+            alert("验证码错误")
+        }else{
+            alert("登录成功")
+        }
+    })
+//    val1!==val2
     function time() {
         set = setInterval(function() {
             if (i > 0) {

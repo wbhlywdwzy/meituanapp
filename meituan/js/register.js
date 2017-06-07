@@ -42,29 +42,29 @@ $(function() {
     var nums = null;
     var vnums = '';
     var pwd = '';
-    $(".checkbox").on("click", function() {
-        nums = $(".inp").val();
-        if ($(".checkbox").attr("checked", 'true')) {
-            sta = 1;
+    $(".checkbox").on("change", function() {
+        if ($(".checkbox").is(":checked")) {
+            nums = $(".inp").val();
             if (nums != '' && zz.test(nums)) {
                 $(".getcode").removeAttr("disabled", 'true');
+                $(".getcode").css({"background": '#06c1ae'})
             }
-                $(".checkbox").removeAttr("checked",'true');
         } else {
-            sta = 0
             $(".getcode").attr("disabled", 'true');
-            $(".checkbox").attr("checked",'true')
+            $(".getcode").css({"background": '#83e1d7'})
         }
     });
     $(".inp").on("input", function() {
         vnums = '';
         nums = $(".inp").val();
         if (nums != '' && zz.test(nums)) {
-            if ($(".checkbox").attr("checked", 'true')) {
+            if ($(".checkbox").is(":checked")) {
                 $(".getcode").removeAttr("disabled", 'true');
+                 $(".getcode").css({"background": '#06c1ae'})
             }
         } else {
             $(".getcode").attr("disabled", 'true');
+            $(".getcode").css({"background": '#83e1d7'})
         }
     });
     $(".getcode").on("click", function() {
@@ -87,9 +87,11 @@ $(function() {
         var val1 = $(".yard-val").text();
         var val2 = $(".inpp").val();
         if (val2 == '') {
-            $(".submitcode").attr("disabled", 'true')
+            $(".submitcode").attr("disabled", 'true');
+               $(".submitcode").css({"background": '#83e1d7'});
         } else {
-            $(".submitcode").removeAttr("disabled", 'true')
+            $(".submitcode").removeAttr("disabled", 'true');
+               $(".submitcode").css({"background": '#06c1ae'});
         }
     });
     $(".submitcode").on("click", function() {
@@ -117,7 +119,7 @@ $(function() {
         $(".step-font").eq(1).removeClass("h");
     });
     $(".register").on("click", function() {
-        var reg = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,10}$/;
+        var reg = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/;
         var val1 = $(".password").eq(0).val();
         var val2 = $(".password").eq(1).val();
         if (val1 == '' || val2 == '') {

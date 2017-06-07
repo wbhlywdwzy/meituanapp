@@ -7,19 +7,88 @@
     color: #565656;
     font-size: 1.6rem;
     @include br;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
     .header-con {
         width: 90%;
         height: 45px;
         margin: 0 auto;
-        .share,.more,.shine{
+        .shinec, .share, .more, .shine {
             float: right;
             margin-left: 4%;
         }
-        .icon{
+        .shinec,
+        .shine {
+            width: 20px;
+        }
+        .shinec {
+            display: none;
+            font-size: 3rem;
+            color: #06c1ae;
+        }
+        .icon {
             font-size: 2rem;
         }
     }
+    .tran {
+        display: none;
+        position: absolute;
+        right: 5%;
+        top: 35px;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 10px solid rgba(0, 0, 0, .9);
+    }
+    .more-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 44px;
+        width: 40%;
+        margin-right: 4%;
+        height: auto;
+        z-index: 20;
+        color: #fff;
+        .cty {
+            width: 90%;
+            padding-left: 10%;
+            height: 45px;
+            font-size: 1.5rem;
+            background: rgba(0, 0, 0, .7);
+            border-bottom: 1px solid #fff;
+        }
+        .home{
+            @include br4(5px);
+        }
+        .collect{
+            border-bottom:none;
+            @include br5(5px);
+        }
+    }
+    .h {
+        display: block;
+    }
 }
+
+.spancollect {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -50px;
+    width: 100px;
+    height: 30px;
+    display: none;
+    color: #FFF;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, .9);
+    @include br1(20px)
+}
+
 .commonality {
     height: 45px;
     line-height: 45px;
@@ -28,116 +97,268 @@
     @include br;
     color: #666666;
 }
-.pic{
+
+.pic {
     position: relative;
     width: 100%;
-    height:267px;
-    background: url("../images/meituan_15c7b802607.jpg") center top no-repeat; 
+    height: 300px;
+    background: url("../images/meituan_15c7b802607.jpg") center top no-repeat;
     background-size: 100% 100%;
-    .cover{
+    margin-top: 44px;
+    z-index: 0;
+    .cover {
         position: absolute;
         left: 0;
         bottom: 0;
-        width:100%;
+        width: 100%;
         height: 50px;
-        background: rgba(0,0,0,0.7);
+        background: rgba(0, 0, 0, 0.7);
         color: #FFF;
-        li:nth-child(1){
-            font-size: 1.5rem;
-            line-height: 35px;
-            margin-left: 4%;
-        }
-        li:nth-child(2){
-            font-size: 1.2rem;
-            line-height: 10px;
-            margin-left: 4%;
-        }
+    }
+    ul li:nth-child(1) {
+        font-size: 1.5rem;
+        line-height: 35px;
+        margin-left: 4%;
+    }
+    li:nth-child(2) {
+        font-size: 1.2rem;
+        line-height: 10px;
+        margin-left: 4%;
     }
 }
-.left{
+
+.left {
     float: left;
     margin-left: 4%;
 }
-.right{
+
+.right {
     float: right;
-    margin-right: 4%; 
+    margin-right: 4%;
 }
-.price{
+
+.much {
+    width: 100%;
+    color: #06c1ae;
+    z-index: 0;
+    button {
+        float: right;
+        margin-right: 4%;
+        background: #fe9900;
+        text-align: center;
+        color: #fff;
+        border: none;
+        outline: none;
+        height: 30px;
+        width: 25%;
+        margin-top: 8px;
+    }
+    .how {
+        font-size: 2rem
+    }
+    .door {
+        color: #ccc;
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+    .p {
+        margin-left: 4%;
+    }
+}
+
+.price {
     width: 100%;
     height: auto;
     background: #fff;
-    .much{
-        width: 100%;
-        color: #06c1ae;
-        .p{
-            margin-left: 4%;
-        }
-        .how{
-            font-size: 2rem
-        }
-        .door{
-            color: #ccc;
-            font-size: 1.2rem;
-            margin-left: 10px;
-        }
-        button{
-            float: right;
-            margin-right: 4%;
-            background: #fe9900;
-            text-align: center;
-            color: #fff;
-            border: none;
-            outline: none;
-            height: 30px;
-            width: 25%;
-            margin-top: 8px;
-        }
-    }
-    .quit{
+    .quit {
         color: #aed181;
         margin-left: 4%;
+        .sold {
+            float: right;
+            color: #999999;
+            margin-right: 24%;
+        }
     }
-    .safeguard{
-    width: 100%;
-    line-height: 30px;
-    font-size: 1.4rem;
+    .safeguard {
+        width: 100%;
+        line-height: 30px;
+        font-size: 1.4rem;
         padding-top: 10px;
         padding-bottom: 10px;
-    background: #fff;
-//    @include br;
-    color: #666666;
+        background: #fff;
+        //    @include br;
+        color: #666666;
     }
 }
-.evaluate{
+
+.evaluate {
     width: 100%;
-    height: 100px;
-    margin: 30px auto;
+    height: auto;
+    margin: 10px auto;
     background: #FFF;
 }
-.Info{
+
+.Info {
+    width: 100%;
+    background: #FFF;
+    .font {
+        margin-left: 4%;
+    }
+    .local {
+        width: 90%;
+        height: 90px;
+        padding-top: 10px;
+        margin: 0 auto;
+        ul {
+            width: 75%;
+            float: left;
+        }
+        li {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-height: 25px;
+        }
+        li:first-child {
+            font-size: 1.5rem;
+        }
+        li:nth-child(2) {
+            color: #b7b7b7;
+        }
+        li:nth-child(3) {
+            color: #b7b7b7;
+        }
+        .tel {
+            float: right;
+            margin-top: 23px;
+            color: #39c6b6;
+            border-left: 1px solid #d8d8d8;
+            font-size: 2.6rem;
+        }
+    }
+}
+
+.details {
     width: 100%;
     height: 200px;
+    margin: 15px auto;
     background: #FFF;
+    .meat {
+        text-align: center;
+        color: #000;
+    }
+    .face {
+        margin-left: 4%;
+        color: #000;
+    }
+    .meal {
+        float: left;
+        width: 65%;
+        margin-left: 4%;
+    }
+    .cost {
+        float: right;
+        width: 20%;
+        text-align: center;
+    }
+    .number {
+        float: left;
+        width: 10%;
+        text-align: center;
+        border-left: 1px solid #d8d8d8;
+        border-right: 1px solid #d8d8d8;
+    }
 }
-.details{
-    width: 100%;
-    height: 200px;
-    margin: 30px auto;
-    background: #FFF;
-}
-.know{
+
+.know {
     width: 100%;
     height: auto;
     margin: 30px auto;
     background: #FFF;
     line-height: 25px;
     color: #666666;
-    .wk{
-        margin-left: 4%;
-        width: 90%;
-        .color{
+    .wk {
+        width: 100%;
+        .color {
             color: #fe9900;
-        } 
+        }
+        .buy {
+            margin-left: 4%;
+        }
     }
+    .content {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
 
+.recommend,
+.advertisment {
+    width: 100%;
+    padding: 20px 0 0;
+    background: #FFF;
+    .entry {
+        margin-left: 4%;
+        float: left;
+        line-height: 30px;
+        font-size: 1.6rem;
+        color: #999999;
+    }
+    .entry-left {
+        margin-right: 4%;
+        float: right;
+        line-height: 30px;
+        font-size: 1.6rem;
+        color: #999999;
+    }
+    .relative {
+        overflow: hidden;
+        width: 96%;
+        height: 120px;
+        margin-left: 4%;
+        background: #FFF;
+        border-bottom: 1px solid #d8d8d8;
+        .relative-pic {
+            float: left;
+            margin-top: 10px;
+            width: 100px;
+            height: 90px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .relative-content {
+            width: 60%;
+            height: 100px;
+            margin-top: 10px;
+            float: right;
+            ul li {
+                width: 96%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin-right: 4%;
+            }
+            li:first-child {
+                font-size: 1.5rem;
+                line-height: 35px;
+            }
+            li:nth-child(2) {
+                font-size: 1.2rem;
+                line-height: 30px;
+                color: #9a9a9a;
+            }
+            li:nth-child(3) {
+                font-size: 1.2rem;
+                line-height: 30px;
+                .money {
+                    color: #06c1ae;
+                }
+                .right {
+                    color: #9a9a9a;
+                }
+            }
+        }
+    }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>Document</title>
+    <title>团购</title>
     <link rel="stylesheet" href="css/details.css">
     <link rel="stylesheet" href="font/iconfont.css">
 </head>
@@ -16,7 +16,15 @@
             <span class="">套餐详情</span>
             <span class="more">···</span>
             <span class="icon shine">&#xe619;</span>
+            <span class="icon shinec">&#xe64b;</span>
             <span class="icon share">&#xe62e;</span>
+        </div>
+        <div class="tran"></div>
+        <div class="more-content">
+            <div class="home cty icon">&#xe6e6;&nbsp;首页</div>
+            <div class="search cty icon">&#xe60e;&nbsp;搜索</div>
+            <div class="my cty icon">&#xe652;&nbsp;我的订单</div>
+            <div class="collect cty icon">&#xe619;&nbsp;收藏</div>
         </div>
     </div>
     <div class="pic">
@@ -25,29 +33,54 @@
             <li>咖喱牛肉烩饭，免预约</li>
         </ul>
     </div>
+    <div class="much commonality">
+        <span class="p">￥</span><span class="how">29.9</span>
+        <span class="door">门市价：￥42</span>
+        <button>立即抢购</button>
+    </div>
     <div class="price">
-        <div class="much commonality">
-            <span class="p">￥</span><span class="how">29.9</span>
-            <span class="door">门市价：￥42</span>
-            <button>立即抢购</button>
-        </div>
         <div class="safeguard">
             <p class="quit">
-                <span class="icon">&#xe767;</span>
-            <span>随时退</span>
+                <span class="tui icon">&#xe767;随时退</span>
+                <span class="sold icon">&#xe642;已售0</span>
             </p>
             <p class="quit">
-                <span class="icon">&#xe767;</span>
-            <span>过期自动退</span>
+                <span class="icon">&#xe767;过期自动退</span>
             </p>
         </div>
     </div>
-    <div class="evaluate"></div>
-    <div class="Info"></div>
-    <div class="details"></div>
+    <span class="spancollect"></span>
+    <!--
+    <div class="evaluate">
+        <div class="content commonality"></div>
+    </div>
+-->
+    <div class="Info">
+        <div class="mall-info commonality"><span class="font">商家信息</span></div>
+        <div class="local">
+            <ul>
+                <li>糊世刺身(建邺万达店)</li>
+                <li>建邺区建邺万达西地福园街129号-14（靠近品川荟美蛙鱼头）</li>
+                <li class="icon">&#xe6e3;4.1km</li>
+            </ul>
+            <span class="tel icon">&#xe681;</span>
+        </div>
+    </div>
+    <div class="details">
+        <div class="commonality">&nbsp;&nbsp;&nbsp;套餐</div>
+        <div class="meat commonality">椒盐五花肉</div>
+        <div class="commonality">
+            <span class="meal">咖喱牛肉烩饭</span>
+            <span class="number">1份</span>
+            <span class="cost">￥42</span>
+        </div>
+        <div class="commonality"><span class="face">·免费提供餐巾纸</span></div>
+    </div>
     <div class="know">
         <div class="wk">
-            <div class="buy commonality">购买须知</div>
+            <div class="commonality">
+                <span class="buy">购买须知</span>
+            </div>
             <div class="content">
                 <ul>
                     <li class="color">有效期: </li>
@@ -59,14 +92,210 @@
                 </ul>
                 <ul>
                     <li class="color">使用规则:</li>
-                    <li>无需预约，消费高峰时可能需要等位</li>
-                    <li>每张美团券建议1人使用</li>
-                    <li>不可使用包间</li>
-                    <li>堂食外带均可，可以打包，打包费详情咨询商家</li>
-                    <li>团购用户不可同时享受商家其他优惠</li>
-                    <li>酒水饮料等问题，请致电商家咨询，以商家反馈为准</li>
-                    <li>如部分菜品因时令或其他不可抗因素导致无法提供，店内会用等价菜品替换，具体事宜请与店内协商</li>
-                    <li>提供免费WiFi</li>
+                    <li>· 无需预约，消费高峰时可能需要等位</li>
+                    <li>· 每张美团券建议1人使用</li>
+                    <li>· 不可使用包间</li>
+                    <li>· 堂食外带均可，可以打包，打包费详情咨询商家</li>
+                    <li>· 团购用户不可同时享受商家其他优惠</li>
+                    <li>&nbsp;酒水饮料等问题，请致电商家咨询，以商家反馈为准</li>
+                    <li>&nbsp;如部分菜品因时令或其他不可抗因素导致无法提供, 店内会用等价菜品替换，具体事宜请与店内协商</li>
+                    <li>· 提供免费WiFi</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="recommend">
+        <span class="entry">相关推荐</span>
+        <div class="relative">
+            <div class="relative-pic">
+                <img src="images/meituan_15c7dabfdd8.jpg" alt="">
+            </div>
+            <div class="relative-content">
+                <ul>
+
+                    <li>[乾料理]建议单人使用</li>
+                    <li>
+                        <span>日本料理</span>
+                        <span class="right">建邺万达</span>
+                    </li>
+                    <li>
+                        <span class="money">￥19.9</span>
+                        <span class="right">已售389</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="relative-pic">
+                <img src="images/meituan_15c7dac6f18.jpg" alt="">
+            </div>
+            <div class="relative-content">
+                <ul>
+                    <li>[喜乐日本料理]单人午市套餐，提供免费WIFI建议单人使用</li>
+                    <li>
+                        <span>日本料理</span>
+                        <span class="right">建邺万达</span>
+                    </li>
+                    <li>
+                        <span class="money">￥29.9</span>
+                        <span class="right">已售61</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="relative-pic">
+                <img src="images/cishi.jpg" alt="">
+            </div>
+            <div class="relative-content">
+                <ul>
+
+                    <li>[藤原布二]火炙黄桃蟹棒1份，包间免费，免预约</li>
+                    <li>
+                        <span>日本料理</span>
+                        <span class="right">南大/南师大时</span>
+                    </li>
+                    <li>
+                        <span class="money">￥19.8</span>
+                        <span class="right">已售2</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="relative-pic">
+                <img src="images/meituan_15c7dac3751.jpg" alt="">
+            </div>
+            <div class="relative-content">
+                <ul>
+
+                    <li>[糊世刺身]全天套餐建议2人使用</li>
+                    <li>
+                        <span>日本料理</span>
+                        <span class="right">金宁广场</span>
+                    </li>
+                    <li>
+                        <span class="money">￥128</span>
+                        <span class="right">已售483</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="relative-pic">
+                <img src="images/meituan_15c7dac8741.jpg" alt="">
+            </div>
+            <div class="relative-content">
+                <ul>
+
+                    <li>[乾料理]活赤贝刺身1份，包间免费</li>
+                    <li>
+                        <span>日本料理</span>
+                        <span class="right">建邺万达</span>
+                    </li>
+                    <li>
+                        <span class="money">￥28.0</span>
+                        <span class="right">已售6</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="relative-pic">
+                <img src="images/meituan_15c7daca2a9.jpg" alt="">
+            </div>
+            <div class="relative-content">
+                <ul>
+
+                    <li>[乾料理]100元代金券，可叠加</li>
+                    <li>
+                        <span>日本料理</span>
+                        <span class="right">新街口地区</span>
+                    </li>
+                    <li>
+                        <span class="money">￥89.0</span>
+                        <span class="right">已售59</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="advertisment">
+        <span class="entry">看了本套餐的还看了</span>
+        <span class="entry-left">广告</span>
+        <div class="relative">
+            <div class="relative-pic">
+                <img src="images/meituan_15c7dad15b3.jpg" alt="">
+            </div>
+            <div class="relative-content">
+                <ul>
+
+                    <li>KOPH创意烘焙</li>
+                    <li>
+                        <span>6寸蛋糕5选1，提供免费WIFI</span>
+                    </li>
+                    <li>
+                        <span class="money">￥138</span>
+                        <del>208元</del>
+                        <span class="right">已售67</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="relative-pic">
+                <img src="images/meituan_15c7dad5ec0.jpg" alt="">
+            </div>
+            <div class="relative-content">
+                <ul>
+
+                    <li>传厨螺蛳粉</li>
+                    <li>
+                        <span>传厨经典口味，建议单人使用</span>
+                    </li>
+                    <li>
+                        <span class="money">￥10.9</span>
+                        <del>23元</del>
+                        <span class="right">已售97</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="relative-pic">
+                <img src="images/meituan_15c7dad8b2a.png" alt="">
+            </div>
+            <div class="relative-content">
+                <ul>
+
+                    <li>鱼米乡</li>
+                    <li>
+                        <span>龙虾5选3，提供免费WIFI</span>
+                    </li>
+                    <li>
+                        <span class="money">￥107</span>
+                        <del>147元</del>
+                        <span class="right">已售5</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="relative-pic">
+                <img src="images/meituan_15c7dad4c17.jpg" alt="">
+            </div>
+            <div class="relative-content">
+                <ul>
+
+                    <li>海心阁港式茶餐厅</li>
+                    <li>
+                        <span>50元代金券1张，可叠加</span>
+                    </li>
+                    <li>
+                        <span class="money">￥45</span>
+                        <del>50元</del>
+                        <span class="right">已售107</span>
+                    </li>
                 </ul>
             </div>
         </div>
